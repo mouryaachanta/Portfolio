@@ -56,7 +56,7 @@ const PORTFOLIO_DATA = {
         { name: "Tableau", level: "Visual Analytics & Dashboards", highlight: true },
         { name: "Data Preprocessing", level: "Cleaning, Normalization & Imputation", highlight: true },
         { name: "Time-Series Processing", level: "Sliding Windows & Trend Clipping", highlight: true },
-        { name: "Microsoft Excel", level: "Spreadsheets & Advanced Analytics", highlight: true, color: "emerald" },
+        { name: "Microsoft Excel", level: "Spreadsheets & Advanced Analytics", highlight: true },  
         { name: "Statistics", level: "Inferential & Descriptive", highlight: false }
       ]
     },

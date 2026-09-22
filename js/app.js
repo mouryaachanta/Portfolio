@@ -62,16 +62,12 @@ function renderSkills() {
           </div>
           <h3 class="text-lg font-bold text-slate-100">${cat.category}</h3>
         </div>
-        <div class="flex flex-wrap gap-2">
+               <div class="flex flex-wrap gap-2">
           ${cat.skills.map(skill => {
-            const isExcel = skill.name.toLowerCase().includes('excel') || skill.color === 'emerald';
             let styleClasses = 'bg-slate-800/60 text-slate-300 border border-slate-700/50';
             let dotHtml = '';
 
-            if (isExcel) {
-              styleClasses = 'bg-emerald-500/15 text-emerald-300 border border-emerald-500/40 shadow-sm shadow-emerald-500/10 font-semibold';
-              dotHtml = '<span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>';
-            } else if (skill.highlight) {
+            if (skill.highlight) {
               styleClasses = 'bg-cyan-500/10 text-cyan-300 border border-cyan-500/30';
               dotHtml = '<span class="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse"></span>';
             }
@@ -83,6 +79,7 @@ function renderSkills() {
               </span>
             `;
           }).join('')}
+        </div>
         </div>
       </div>
     </div>
