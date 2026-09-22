@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Achanta Mukesh Mourya | ECE Graduate | Aspiring Data Scientist & AI/ML Engineer</title>
+  
+  <!-- SEO & Open Graph Metadata -->
+  <meta name="description" content="Professional portfolio of Achanta Mukesh Mourya, ECE graduate specializing in Data Science, Machine Learning, Deep Learning (CNNs, Transformers), and predictive maintenance. Author of published research in AIJFR.">
+  <meta name="keywords" content="Achanta Mukesh Mourya, Data Scientist, AI/ML Engineer, Machine Learning, Deep Learning, Python, SQL, Data Science, Predictive Maintenance, CNN Transformer, ECE Graduate, Sasi Institute, AIJFR, NASA C-MAPSS, Scaler">
+  <meta name="author" content="Achanta Mukesh Mourya">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mouryaachanta.github.io/">
+  <meta property="og:title" content="Achanta Mukesh Mourya | Aspiring Data Scientist & AI/ML Engineer">
+  <meta property="og:description" content="ECE Graduate with hands-on expertise in Python, SQL, Deep Learning (CNN, Transformers), and predictive maintenance. Published author in AIJFR (2026).">
+  <meta property="og:image" content="assets/profile_square.jpg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://mouryaachanta.github.io/">
+  <meta property="twitter:title" content="Achanta Mukesh Mourya | AI/ML Portfolio">
+  <meta property="twitter:description" content="Data Science & AI/ML Portfolio of Achanta Mukesh Mourya. Featured research on Hybrid CNN-Transformers for industrial predictive maintenance.">
+  <meta property="twitter:image" content="assets/profile_square.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2306b6d4'><circle cx='12' cy='12' r='10'/></svg>">
+
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#ecfeff',
+              100: '#cffafe',
+              200: '#a5f3fc',
+              300: '#67e8f9',
+              400: '#22d3ee',
+              500: '#06b6d4',
+              600: '#0891b2',
+              700: '#0e7490',
+              800: '#155e75',
+              900: '#164e63',
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- JSON-LD Structured Data Schema for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "name": "Achanta Mukesh Mourya",
+        "jobTitle": "Aspiring Data Scientist & AI/ML Engineer",
+        "alumnusOf": [
+          {
+            "@type": "CollegeOrUniversity",
+            "name": "Sasi Institute of Technology & Engineering"
+          },
+          {
+            "@type": "EducationalOrganization",
+            "name": "Scaler"
+          }
+        ],
+        "email": "mailto:achantamukeshmourya@gmail.com",
+        "telephone": "+919492369318",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Rajahmundry",
+          "addressRegion": "Andhra Pradesh",
+          "addressCountry": "India"
+        },
+        "url": "https://mouryaachanta.github.io/",
+        "sameAs": [
+          "https://github.com/mouryaachanta",
+          "https://www.linkedin.com/in/achantamukeshmourya/",
+          "https://www.aijfr.com/research-paper.php?id=4712"
+        ]
+      },
+      {
+        "@type": "ScholarlyArticle",
+        "headline": "Predictive Maintenance for Industrial Machinery",
+        "name": "Predictive Maintenance for Industrial Machinery",
+        "author": [
+          {
+            "@type": "Person",
+            "name": "Achanta Mukesh Mourya"
+          }
+        ],
+        "datePublished": "2026-04-10",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Advanced International Journal for Research (AIJFR)"
+        },
+        "url": "https://www.aijfr.com/research-paper.php?id=4712"
+      }
+    ]
+  }
+  </script>
+</head>
+<body class="bg-[#090d16] text-slate-100 min-h-screen relative antialiased selection:bg-cyan-500 selection:text-slate-950 bg-grid-pattern">
+
+  <!-- Background Decorative Glowing Accents -->
+  <div class="glow-orb top-0 left-1/4 w-[500px] h-[500px] bg-cyan-500"></div>
+  <div class="glow-orb top-1/3 right-10 w-[450px] h-[450px] bg-emerald-500"></div>
+  <div class="glow-orb bottom-1/4 left-10 w-[550px] h-[550px] bg-indigo-500"></div>
+
+  <!-- Sticky Navbar -->
+  <header class="fixed top-0 left-0 right-0 z-50 glass-panel border-b border-slate-800/80 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between">
+      <!-- Monogram Logo -->
+      <a href="#hero" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 to-emerald-400 p-[1.5px] transition group-hover:scale-105">
+          <div class="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center font-mono-code font-extrabold text-sm text-cyan-400">
+            AMM
+          </div>
+        </div>
+        <div class="flex flex-col">
+          <span class="font-bold text-slate-100 text-sm sm:text-base tracking-tight group-hover:text-cyan-400 transition">
+            Achanta Mukesh Mourya
+          </span>
+          <span class="text-[11px] text-slate-400 font-mono-code hidden sm:inline-block">
+            Data Science & AI/ML
+          </span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="hidden lg:flex items-center gap-6 text-sm font-medium text-slate-300">
+        <a href="#about" class="nav-link hover:text-cyan-400 transition">About</a>
+        <a href="#skills" class="nav-link hover:text-cyan-400 transition">Skills</a>
+        <a href="#projects" class="nav-link hover:text-cyan-400 transition">Projects</a>
+        <a href="#research" class="nav-link hover:text-amber-400 transition flex items-center gap-1">
+          <i data-lucide="book-open" class="w-3.5 h-3.5 text-amber-400"></i>
+          <span>Research</span>
+        </a>
+        <a href="#certifications" class="nav-link hover:text-cyan-400 transition">Certifications</a>
+        <a href="#education" class="nav-link hover:text-cyan-400 transition">Education</a>
+        <a href="#resume" class="nav-link hover:text-cyan-400 transition">Resume</a>
+        <a href="#contact" class="nav-link hover:text-cyan-400 transition">Contact</a>
+      </nav>
+
+      <!-- CTA Buttons & Mobile Toggle -->
+      <div class="flex items-center gap-3">
+        <a href="assets/Achanta_Mukesh_Mourya_Resume.pdf" download="Achanta_Mukesh_Mourya_Resume.pdf"
+           class="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 transition">
+          <i data-lucide="download" class="w-3.5 h-3.5 text-cyan-400"></i>
+          <span>Resume</span>
+        </a>
+        <a href="#contact"
+           class="hidden md:inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold bg-cyan-500 hover:bg-cyan-400 text-slate-950 transition shadow-lg shadow-cyan-500/20">
+          <i data-lucide="mail" class="w-3.5 h-3.5"></i>
+          <span>Get in Touch</span>
+        </a>
+        <!-- Hamburger Menu Button -->
+        <button id="mobile-menu-toggle" type="button" aria-label="Open Navigation Menu"
+                class="lg:hidden p-2 rounded-xl text-slate-400 hover:text-white bg-slate-800/80 border border-slate-700">
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div id="mobile-menu" class="hidden fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-xl lg:hidden flex flex-col p-6">
+    <div class="flex items-center justify-between pb-6 border-b border-slate-800">
+      <div class="flex items-center gap-3">
+        <div class="w-9 h-9 rounded-lg bg-cyan-500 text-slate-950 font-mono-code font-bold flex items-center justify-center text-sm">
+          AMM
+        </div>
+        <span class="font-bold text-white text-base">Achanta Mukesh Mourya</span>
+      </div>
+      <button id="close-mobile-menu" type="button" aria-label="Close Navigation Menu" class="p-2 text-slate-400 hover:text-white">
+        <i data-lucide="x" class="w-6 h-6"></i>
+      </button>
+    </div>
+    <nav class="flex flex-col gap-4 py-8 text-base font-semibold text-slate-200">
+      <a href="#hero" class="hover:text-cyan-400 py-1">Home</a>
+      <a href="#about" class="hover:text-cyan-400 py-1">About Me</a>
+      <a href="#skills" class="hover:text-cyan-400 py-1">Technical Skills</a>
+      <a href="#projects" class="hover:text-cyan-400 py-1">Featured Projects</a>
+      <a href="#research" class="hover:text-amber-400 py-1 flex items-center gap-2">
+        <i data-lucide="book-open" class="w-4 h-4 text-amber-400"></i>
+        <span>Research Paper (AIJFR)</span>
+      </a>
+      <a href="#certifications" class="hover:text-cyan-400 py-1">Certifications</a>
+      <a href="#education" class="hover:text-cyan-400 py-1">Education Timeline</a>
+      <a href="#resume" class="hover:text-cyan-400 py-1">Resume Section</a>
+      <a href="#contact" class="hover:text-cyan-400 py-1">Contact Details</a>
+    </nav>
+    <div class="mt-auto pt-6 border-t border-slate-800 space-y-3">
+      <a href="assets/Achanta_Mukesh_Mourya_Resume.pdf" download="Achanta_Mukesh_Mourya_Resume.pdf"
+         class="w-full py-3 rounded-xl bg-slate-800 text-center font-bold text-sm text-slate-200 border border-slate-700 flex items-center justify-center gap-2">
+        <i data-lucide="download" class="w-4 h-4 text-cyan-400"></i>
+        <span>Download Resume PDF</span>
+      </a>
+      <a href="#contact"
+         class="w-full py-3 rounded-xl bg-cyan-500 text-center font-bold text-sm text-slate-950 flex items-center justify-center gap-2">
+        <i data-lucide="send" class="w-4 h-4"></i>
+        <span>Contact Directly</span>
+      </a>
+    </div>
+  </div>
+
+  <main class="relative z-10 pt-24 sm:pt-28">
+
+    <!-- HERO SECTION -->
+    <section id="hero" class="min-h-[85vh] flex items-center px-4 sm:px-6 lg:px-8 py-12">
+      <div class="max-w-7xl mx-auto w-full">
+        <div class="grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+          
+          <!-- Hero Text -->
+          <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+            <!-- Availability Badge -->
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-xs font-semibold text-cyan-300">
+              <span class="w-2 h-2 rounded-full bg-cyan-400 animate-ping"></span>
+              <span>Available for Data Science & AI/ML Roles</span>
+            </div>
+
+            <!-- Main Heading -->
+            <div>
+              <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight">
+                Hi, I'm <br class="hidden sm:inline">
+                <span class="gradient-text-cyan">Achanta Mukesh Mourya</span>
+              </h1>
+              <p class="mt-3 text-lg sm:text-xl font-medium text-slate-300">
+                ECE Graduate <span class="text-cyan-400 font-semibold">|</span> Aspiring Data Scientist & AI/ML Engineer
+              </p>
+            </div>
+
+            <!-- Professional Introduction (Strictly from Resume) -->
+            <p class="text-slate-400 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+              AI/ML enthusiast and Electronics & Communication Engineering graduate with hands-on experience in 
+              <span class="text-slate-200 font-semibold">Python</span>, 
+              <span class="text-slate-200 font-semibold">SQL</span>, and 
+              <span class="text-slate-200 font-semibold">Machine Learning</span>. 
+              Author of published peer-reviewed research on 
+              <span class="text-cyan-400 font-semibold">Hybrid CNN-Transformers</span> for industrial predictive maintenance.
+            </p>
+
+            <!-- Verification Pills -->
+            <div class="flex flex-wrap items-center justify-center lg:justify-start gap-2 pt-1">
+              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg text-xs font-medium bg-slate-800/80 text-slate-300 border border-slate-700">
+                <i data-lucide="graduation-cap" class="w-3.5 h-3.5 text-cyan-400"></i>
+                B.Tech ECE (7.3 CGPA)
+              </span>
+              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg text-xs font-medium bg-amber-500/10 text-amber-300 border border-amber-500/30">
+                <i data-lucide="award" class="w-3.5 h-3.5 text-amber-400"></i>
+                AIJFR Published Researcher
+              </span>
+              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg text-xs font-medium bg-emerald-500/10 text-emerald-300 border border-emerald-500/30">
+                <i data-lucide="shield-check" class="w-3.5 h-3.5 text-emerald-400"></i>
+                Scaler DS & ML Certified
+              </span>
+              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg text-xs font-medium bg-indigo-500/10 text-indigo-300 border border-indigo-500/30">
+                <i data-lucide="cpu" class="w-3.5 h-3.5 text-indigo-400"></i>
+                NASA C-MAPSS Modeling
+              </span>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-3">
+              <a href="#projects" 
+                 class="px-6 py-3.5 rounded-xl font-bold text-sm bg-cyan-500 hover:bg-cyan-400 text-slate-950 transition shadow-lg shadow-cyan-500/25 flex items-center gap-2">
+                <i data-lucide="layers" class="w-4 h-4"></i>
+                <span>View My Projects</span>
+              </a>
+              <a href="assets/Achanta_Mukesh_Mourya_Resume.pdf" download="Achanta_Mukesh_Mourya_Resume.pdf"
+                 class="px-6 py-3.5 rounded-xl font-bold text-sm bg-slate-800 hover:bg-slate-700 text-white border border-slate-700 transition flex items-center gap-2">
+                <i data-lucide="download" class="w-4 h-4 text-cyan-400"></i>
+                <span>Download Resume</span>
+              </a>
+              <a href="#contact"
+                 class="px-6 py-3.5 rounded-xl font-bold text-sm bg-slate-900/80 hover:bg-slate-800 text-slate-300 border border-slate-800 transition flex items-center gap-2">
+                <i data-lucide="message-square" class="w-4 h-4"></i>
+                <span>Contact Me</span>
+              </a>
+            </div>
+
+            <!-- Social Links / Quick Connect -->
+            <div class="pt-4 flex items-center justify-center lg:justify-start gap-4 text-slate-400">
+              <span class="text-xs uppercase tracking-wider font-semibold text-slate-400">Connect:</span>
+              <a href="https://www.linkedin.com/in/achantamukeshmourya/" target="_blank" rel="noopener noreferrer" 
+                 class="p-2.5 rounded-xl bg-slate-800/80 hover:bg-[#0A66C2] hover:text-white border border-slate-700/80 transition flex items-center justify-center text-slate-300" title="LinkedIn Profile">
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                </svg>
+              </a>
+              <a href="https://github.com/mouryaachanta" target="_blank" rel="noopener noreferrer" 
+                 class="p-2.5 rounded-xl bg-slate-800/80 hover:bg-slate-700 hover:text-white border border-slate-700/80 transition flex items-center justify-center text-slate-300" title="GitHub Profile">
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                </svg>
+              </a>
+              <a href="https://www.aijfr.com/research-paper.php?id=4712" target="_blank" rel="noopener noreferrer" 
+                 class="p-2.5 rounded-xl bg-slate-800/80 hover:bg-amber-600 hover:text-white border border-slate-700/80 transition flex items-center justify-center text-slate-300" title="Published Research Paper">
+                <i data-lucide="book-open" class="w-4 h-4"></i>
+              </a>
+              <a href="mailto:achantamukeshmourya@gmail.com" 
+                 class="p-2.5 rounded-xl bg-slate-800/80 hover:bg-cyan-600 hover:text-white border border-slate-700/80 transition flex items-center justify-center text-slate-300" title="Send Email">
+                <i data-lucide="mail" class="w-4 h-4"></i>
+              </a>
+            </div>
+
+          </div>
+
+          <!-- Hero Profile Image (Clean & Professional Circular Design) -->
+          <div class="lg:col-span-5 flex justify-center items-center">
+            <div class="relative group">
+              <!-- Subtle, soft ambient back-glow -->
+              <div class="absolute -inset-4 bg-cyan-500/10 rounded-full blur-2xl pointer-events-none transition group-hover:bg-cyan-500/15 duration-500"></div>
+
+              <!-- Outer sleek protective ring -->
+              <div class="relative p-2.5 sm:p-3 rounded-full border border-slate-700/80 bg-slate-900/90 shadow-2xl backdrop-blur-md">
+                <!-- Circular Portrait Viewport -->
+                <div class="w-64 h-64 sm:w-72 sm:h-72 lg:w-80 lg:h-80 xl:w-88 xl:h-88 rounded-full overflow-hidden border-2 border-slate-700/60 group-hover:border-cyan-500/40 transition duration-500 relative">
+                  <img src="assets/profile_square.jpg" 
+                       alt="Achanta Mukesh Mourya - Profile Photo" 
+                       class="w-full h-full object-cover select-none filter contrast-[1.02] brightness-[1.02] transition duration-500 group-hover:scale-105">
+                </div>
+
+                <!-- Clean, Elegant Floating Status Badge -->
+                <div class="absolute -bottom-3 left-1/2 -translate-x-1/2 whitespace-nowrap px-4 py-1.5 rounded-full bg-slate-900/95 border border-slate-700/90 shadow-xl flex items-center gap-2 backdrop-blur-md">
+                  <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                  <span class="text-xs font-semibold text-slate-200">Open to Data Science & AI/ML Roles</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS COUNTERS -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <div id="stats-grid" class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+        <!-- Injected via js/app.js -->
+      </div>
+    </section>
+
+    <!-- ABOUT ME SECTION -->
+    <section id="about" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 scroll-mt-20">
+      <div class="space-y-4 text-center max-w-3xl mx-auto mb-12">
+        <span class="text-xs uppercase tracking-widest font-mono-code font-bold text-cyan-400">Background & Trajectory</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white">About Me</h2>
+        <div class="w-16 h-1 bg-gradient-to-r from-cyan-500 to-emerald-400 mx-auto rounded-full"></div>
+      </div>
+
+      <div class="grid lg:grid-cols-12 gap-8 items-start">
+        <!-- Story / Background Content -->
+        <div class="lg:col-span-7 glass-panel p-6 sm:p-8 rounded-3xl border border-slate-800 space-y-5 leading-relaxed text-slate-300 text-sm sm:text-base">
+          <h3 class="text-xl font-bold text-white flex items-center gap-2">
+            <i data-lucide="compass" class="w-5 h-5 text-cyan-400"></i>
+            <span>Engineering Foundation to Applied AI</span>
+          </h3>
+
+          <p>
+            I am an <strong class="text-white">Electronics & Communication Engineering</strong> graduate from 
+            <span class="text-cyan-400 font-semibold">Sasi Institute of Technology & Engineering</span> (CGPA: 7.3). 
+            With a strong analytical grounding in signals, mathematics, and systems, I identified my deep passion for 
+            extracting actionable patterns from complex data streams and transitioned squarely into <strong class="text-slate-100">Data Science and Machine Learning</strong>.
+          </p>
+
+          <p>
+            My practical experience centers on building end-to-end predictive pipelines using 
+            <strong class="text-slate-100">Python</strong>, <strong class="text-slate-100">SQL</strong>, and modern deep learning frameworks. 
+            In my capstone research, I tackled industrial Remaining Useful Life (RUL) estimation on the benchmark NASA C-MAPSS dataset, formulating a hybrid 
+            <strong class="text-cyan-300">1D CNN-Transformer</strong> architecture with probabilistic uncertainty quantification, which was accepted and published in the peer-reviewed 
+            <strong class="text-amber-300">Advanced International Journal for Research (AIJFR)</strong>.
+          </p>
+
+          <p>
+            To continually elevate my professional standards, I am currently enrolled in the rigorous 
+            <strong class="text-emerald-400">Scaler Data Science & Machine Learning program</strong> (Bengaluru, India), 
+            strengthening my skills in advanced relational SQL, statistical data modeling, and production-grade AI deployment.
+          </p>
+
+          <div class="pt-4 border-t border-slate-800 flex flex-wrap gap-4 text-xs font-mono-code text-slate-400">
+            <div class="flex items-center gap-1.5">
+              <i data-lucide="map-pin" class="w-4 h-4 text-cyan-400"></i>
+              <span>Rajahmundry, AP, India</span>
+            </div>
+            <div class="flex items-center gap-1.5">
+              <i data-lucide="phone" class="w-4 h-4 text-cyan-400"></i>
+              <span>+91 9492369318</span>
+            </div>
+            <div class="flex items-center gap-1.5">
+              <i data-lucide="mail" class="w-4 h-4 text-cyan-400"></i>
+              <span>achantamukeshmourya@gmail.com</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick Facts & Soft Skills Panel -->
+        <div class="lg:col-span-5 space-y-6">
+          <div class="glass-panel p-6 rounded-3xl border border-slate-800 space-y-4">
+            <h4 class="text-base font-bold text-white flex items-center gap-2">
+              <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400"></i>
+              <span>Profile Snapshot</span>
+            </h4>
+
+            <div class="space-y-3 text-xs">
+              <div class="flex justify-between py-2 border-b border-slate-800">
+                <span class="text-slate-400">Primary Domain</span>
+                <span class="font-semibold text-slate-100">Data Science & AI/ML</span>
+              </div>
+              <div class="flex justify-between py-2 border-b border-slate-800">
+                <span class="text-slate-400">Graduation Degree</span>
+                <span class="font-semibold text-slate-100">B.Tech in ECE (2026)</span>
+              </div>
+              <div class="flex justify-between py-2 border-b border-slate-800">
+                <span class="text-slate-400">College</span>
+                <span class="font-semibold text-slate-100 text-right">Sasi Institute of Tech & Eng</span>
+              </div>
+              <div class="flex justify-between py-2 border-b border-slate-800">
+                <span class="text-slate-400">Current Upskilling</span>
+                <span class="font-semibold text-emerald-400 text-right">Scaler Data Science & ML</span>
+              </div>
+              <div class="flex justify-between py-2 border-b border-slate-800">
+                <span class="text-slate-400">Published Research</span>
+                <span class="font-semibold text-amber-400 text-right">AIJFR Vol 7, Issue 2 (2026)</span>
+              </div>
+              <div class="flex justify-between py-2">
+                <span class="text-slate-400">Languages</span>
+                <span class="font-semibold text-slate-100">English (Proficient), Telugu (Native)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Professional Soft Skills -->
+          <div class="glass-panel p-6 rounded-3xl border border-slate-800">
+            <h4 class="text-sm font-bold text-white mb-3 flex items-center gap-2">
+              <i data-lucide="user-check" class="w-4 h-4 text-cyan-400"></i>
+              <span>Professional Capabilities (Verified in Resume)</span>
+            </h4>
+            <div class="flex flex-wrap gap-2 text-xs">
+              <span class="px-3 py-1.5 rounded-lg bg-slate-800/80 text-slate-300 border border-slate-700">Analytical Thinking</span>
+              <span class="px-3 py-1.5 rounded-lg bg-slate-800/80 text-slate-300 border border-slate-700">Problem Solving</span>
+              <span class="px-3 py-1.5 rounded-lg bg-slate-800/80 text-slate-300 border border-slate-700">Research & Synthesis</span>
+              <span class="px-3 py-1.5 rounded-lg bg-slate-800/80 text-slate-300 border border-slate-700">Technical Communication</span>
+              <span class="px-3 py-1.5 rounded-lg bg-slate-800/80 text-slate-300 border border-slate-700">Team Collaboration</span>
+              <span class="px-3 py-1.5 rounded-lg bg-slate-800/80 text-slate-300 border border-slate-700">Time Management</span>
+              <span class="px-3 py-1.5 rounded-lg bg-slate-800/80 text-slate-300 border border-slate-700">Adaptability</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECHNICAL SKILLS SECTION -->
+    <section id="skills" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 scroll-mt-20">
+      <div class="space-y-4 text-center max-w-3xl mx-auto mb-12">
+        <span class="text-xs uppercase tracking-widest font-mono-code font-bold text-cyan-400">Technical Arsenal</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Skills & Competencies</h2>
+        <p class="text-slate-400 text-sm">
+          Categorized strictly from verified competencies in my resume, published research paper, Scaler specialization, and GitHub repositories.
+        </p>
+        <div class="w-16 h-1 bg-gradient-to-r from-cyan-500 to-emerald-400 mx-auto rounded-full"></div>
+      </div>
+
+      <div id="skills-container" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Dynamic Category Cards Injected via js/app.js -->
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECTS SECTION -->
+    <section id="projects" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 scroll-mt-20">
+      <div class="space-y-4 text-center max-w-3xl mx-auto mb-12">
+        <span class="text-xs uppercase tracking-widest font-mono-code font-bold text-cyan-400">Practical Implementations</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Featured Projects</h2>
+        <p class="text-slate-400 text-sm">
+          Deep learning and data-driven solutions built with Python, TensorFlow, and Cloud platforms.
+        </p>
+        <div class="w-16 h-1 bg-gradient-to-r from-cyan-500 to-emerald-400 mx-auto rounded-full"></div>
+      </div>
+
+      <!-- Main Featured Project (Predictive Maintenance) -->
+      <div id="featured-project-container" class="mb-10">
+        <!-- Rendered via js/app.js -->
+      </div>
+
+      <!-- Secondary Projects -->
+      <div class="space-y-4">
+        <h3 class="text-xl font-bold text-slate-200">Other Verified Projects</h3>
+        <div id="secondary-projects-container" class="grid md:grid-cols-2 gap-6">
+          <!-- Rendered via js/app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- RESEARCH & PUBLICATIONS SECTION -->
+    <section id="research" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 scroll-mt-20">
+      <div class="space-y-4 text-center max-w-3xl mx-auto mb-12">
+        <span class="text-xs uppercase tracking-widest font-mono-code font-bold text-amber-400">Peer-Reviewed Contribution</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Research & Publications</h2>
+        <p class="text-slate-400 text-sm">
+          Published academic work contributing novel deep learning architectures for industrial informatics and predictive health monitoring.
+        </p>
+        <div class="w-16 h-1 bg-gradient-to-r from-amber-500 to-yellow-300 mx-auto rounded-full"></div>
+      </div>
+
+      <div id="publication-container">
+        <!-- Injected via js/app.js -->
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS SECTION -->
+    <section id="certifications" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 scroll-mt-20">
+      <div class="space-y-4 text-center max-w-3xl mx-auto mb-12">
+        <span class="text-xs uppercase tracking-widest font-mono-code font-bold text-cyan-400">Credentials & Upskilling</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Certifications & Accreditations</h2>
+        <p class="text-slate-400 text-sm">
+          Authentic, verifiable credentials across Data Science, Advanced SQL, Artificial Intelligence, and Cloud.
+        </p>
+        <div class="w-16 h-1 bg-gradient-to-r from-cyan-500 to-emerald-400 mx-auto rounded-full"></div>
+      </div>
+
+      <div id="certifications-container" class="grid md:grid-cols-3 gap-6">
+        <!-- Dynamic Cards Injected via js/app.js -->
+      </div>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section id="education" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 scroll-mt-20">
+      <div class="space-y-4 text-center max-w-3xl mx-auto mb-12">
+        <span class="text-xs uppercase tracking-widest font-mono-code font-bold text-cyan-400">Academic Trajectory</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Education & Learning Journey</h2>
+        <p class="text-slate-400 text-sm">
+          Verified academic degrees and formal continuous upskilling programs.
+        </p>
+        <div class="w-16 h-1 bg-gradient-to-r from-cyan-500 to-emerald-400 mx-auto rounded-full"></div>
+      </div>
+
+      <div class="max-w-3xl mx-auto timeline-stem">
+        <div id="education-timeline">
+          <!-- Rendered via js/app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- RESUME SECTION -->
+    <section id="resume" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 scroll-mt-20">
+      <div class="glass-panel rounded-3xl p-8 sm:p-12 border border-cyan-500/30 bg-gradient-to-r from-slate-900 via-slate-900 to-cyan-950/30 text-center relative overflow-hidden shadow-2xl">
+        <div class="absolute -right-10 -bottom-10 w-64 h-64 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-2xl mx-auto space-y-6">
+          <div class="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 mx-auto">
+            <i data-lucide="file-text" class="w-7 h-7"></i>
+          </div>
+
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Interested in My Profile?</h2>
+          <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+            Download my verified resume to review my academic qualifications, deep learning projects, research publication, and technical skills in detail.
+          </p>
+
+          <div class="flex flex-wrap items-center justify-center gap-4 pt-2">
+            <a href="assets/Achanta_Mukesh_Mourya_Resume.pdf" download="Achanta_Mukesh_Mourya_Resume.pdf"
+               class="px-6 py-3.5 rounded-xl font-bold text-sm bg-cyan-500 hover:bg-cyan-400 text-slate-950 transition shadow-lg shadow-cyan-500/20 flex items-center gap-2">
+              <i data-lucide="download" class="w-4 h-4"></i>
+              <span>Download Resume (PDF)</span>
+            </a>
+            <button type="button" class="open-resume-modal px-6 py-3.5 rounded-xl font-bold text-sm bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 transition flex items-center gap-2">
+              <i data-lucide="eye" class="w-4 h-4 text-cyan-400"></i>
+              <span>View Resume Online</span>
+            </button>
+          </div>
+
+          <div class="text-xs font-mono-code text-slate-400">
+            Document: Achanta_Mukesh_Mourya_Resume.pdf (Verified Original)
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 scroll-mt-20">
+      <div class="space-y-4 text-center max-w-3xl mx-auto mb-12">
+        <span class="text-xs uppercase tracking-widest font-mono-code font-bold text-cyan-400">Direct Inquiries</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Get in Touch</h2>
+        <p class="text-slate-400 text-sm">
+          Feel free to reach out regarding Data Science, AI/ML Engineer, and Machine Learning fresher opportunities or collaborative projects.
+        </p>
+        <div class="w-16 h-1 bg-gradient-to-r from-cyan-500 to-emerald-400 mx-auto rounded-full"></div>
+      </div>
+
+      <div class="grid lg:grid-cols-12 gap-8 items-start">
+        
+        <!-- Contact Information Cards -->
+        <div class="lg:col-span-5 space-y-4">
+          <!-- Email Card -->
+          <div class="glass-panel p-6 rounded-2xl border border-slate-800 glass-panel-hover flex items-center justify-between">
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 flex-shrink-0">
+                <i data-lucide="mail" class="w-6 h-6"></i>
+              </div>
+              <div class="overflow-hidden">
+                <div class="text-xs text-slate-400 font-semibold uppercase tracking-wider">Email Address</div>
+                <a href="mailto:achantamukeshmourya@gmail.com" class="text-sm font-semibold text-slate-100 hover:text-cyan-400 transition block truncate">
+                  achantamukeshmourya@gmail.com
+                </a>
+              </div>
+            </div>
+            <button type="button" data-copy="achantamukeshmourya@gmail.com" title="Copy Email" class="p-2 text-slate-400 hover:text-cyan-400 transition">
+              <i data-lucide="copy" class="w-4 h-4"></i>
+            </button>
+          </div>
+
+          <!-- Phone Card -->
+          <div class="glass-panel p-6 rounded-2xl border border-slate-800 glass-panel-hover flex items-center justify-between">
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 flex-shrink-0">
+                <i data-lucide="phone" class="w-6 h-6"></i>
+              </div>
+              <div>
+                <div class="text-xs text-slate-400 font-semibold uppercase tracking-wider">Phone Number</div>
+                <a href="tel:+919492369318" class="text-sm font-semibold text-slate-100 hover:text-emerald-400 transition block">
+                  +91 9492369318
+                </a>
+              </div>
+            </div>
+            <button type="button" data-copy="+919492369318" title="Copy Phone Number" class="p-2 text-slate-400 hover:text-emerald-400 transition">
+              <i data-lucide="copy" class="w-4 h-4"></i>
+            </button>
+          </div>
+
+          <!-- Location Card -->
+          <div class="glass-panel p-6 rounded-2xl border border-slate-800 flex items-center gap-4">
+            <div class="w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 flex-shrink-0">
+              <i data-lucide="map-pin" class="w-6 h-6"></i>
+            </div>
+            <div>
+              <div class="text-xs text-slate-400 font-semibold uppercase tracking-wider">Location</div>
+              <div class="text-sm font-semibold text-slate-100">Rajahmundry, Andhra Pradesh, India</div>
+            </div>
+          </div>
+
+          <!-- Direct Verified Links -->
+          <div class="glass-panel p-6 rounded-2xl border border-slate-800 space-y-3">
+            <div class="text-xs font-semibold uppercase tracking-wider text-slate-400">Profiles & Portals</div>
+            <div class="grid grid-cols-2 gap-2 text-xs font-medium">
+              <a href="https://www.linkedin.com/in/achantamukeshmourya/" target="_blank" rel="noopener noreferrer"
+                 class="p-2.5 rounded-xl bg-slate-800/80 hover:bg-[#0A66C2] hover:text-white border border-slate-700 transition flex items-center gap-2">
+                <svg class="w-4 h-4 fill-current flex-shrink-0" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                </svg>
+                <span>LinkedIn</span>
+              </a>
+              <a href="https://github.com/mouryaachanta" target="_blank" rel="noopener noreferrer"
+                 class="p-2.5 rounded-xl bg-slate-800/80 hover:bg-slate-700 hover:text-white border border-slate-700 transition flex items-center gap-2">
+                <svg class="w-4 h-4 fill-current flex-shrink-0" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                </svg>
+                <span>GitHub</span>
+              </a>
+              <a href="https://www.aijfr.com/research-paper.php?id=4712" target="_blank" rel="noopener noreferrer"
+                 class="p-2.5 rounded-xl bg-slate-800/80 hover:bg-amber-600 hover:text-white border border-slate-700 transition flex items-center gap-2">
+                <i data-lucide="book-open" class="w-4 h-4"></i>
+                <span>AIJFR Paper</span>
+              </a>
+              <a href="https://certificate.scaler.com/validate/2f2bdd6fea3ee2efbe5f346d1c06be928709f3c3ce125923a79b201dcf0bff4e" target="_blank" rel="noopener noreferrer"
+                 class="p-2.5 rounded-xl bg-slate-800/80 hover:bg-emerald-600 hover:text-white border border-slate-700 transition flex items-center gap-2">
+                <i data-lucide="shield-check" class="w-4 h-4"></i>
+                <span>Scaler Cert</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Contact Form -->
+        <div class="lg:col-span-7 glass-panel p-6 sm:p-8 rounded-3xl border border-slate-800">
+          <h3 class="text-xl font-bold text-white mb-2">Send a Message</h3>
+          <p class="text-xs text-slate-400 mb-6">
+            Fill out the form below to initiate communication directly via email.
+          </p>
+
+          <form id="contact-form" class="space-y-4">
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div>
+                <label for="form-name" class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-1.5">
+                  Your Name *
+                </label>
+                <input type="text" id="form-name" name="name" required placeholder="Recruiter / Tech Lead"
+                       class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-700/80 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-cyan-500 transition">
+              </div>
+              <div>
+                <label for="form-email" class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-1.5">
+                  Your Email *
+                </label>
+                <input type="email" id="form-email" name="email" required placeholder="recruiter@company.com"
+                       class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-700/80 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-cyan-500 transition">
+              </div>
+            </div>
+
+            <div>
+              <label for="form-subject" class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-1.5">
+                Subject
+              </label>
+              <input type="text" id="form-subject" name="subject" placeholder="Opportunity for Data Scientist / AI/ML Engineer Role"
+                     class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-700/80 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-cyan-500 transition">
+            </div>
+
+            <div>
+              <label for="form-message" class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-1.5">
+                Message *
+              </label>
+              <textarea id="form-message" name="message" rows="4" required placeholder="Hello Achanta Mukesh, we reviewed your predictive maintenance research and would love to discuss an AI/ML opportunity..."
+                        class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-700/80 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-cyan-500 transition resize-none"></textarea>
+            </div>
+
+            <div id="form-status"></div>
+
+            <button type="submit" 
+                    class="w-full sm:w-auto px-8 py-3.5 rounded-xl font-bold text-sm bg-cyan-500 hover:bg-cyan-400 text-slate-950 transition shadow-lg shadow-cyan-500/20 flex items-center justify-center gap-2">
+              <i data-lucide="send" class="w-4 h-4"></i>
+              <span>Send Message</span>
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- RESUME PREVIEW MODAL -->
+  <div id="resume-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 lg:p-8">
+    <div id="resume-modal-backdrop" class="fixed inset-0 bg-slate-950/80 backdrop-blur-md"></div>
+    <div class="relative glass-panel rounded-3xl border border-slate-700 bg-slate-900 shadow-2xl w-full max-w-4xl max-h-[90vh] flex flex-col z-10 overflow-hidden">
+      <!-- Modal Header -->
+      <div class="px-6 py-4 border-b border-slate-800 flex items-center justify-between">
+        <div class="flex items-center gap-3">
+          <i data-lucide="file-text" class="w-5 h-5 text-cyan-400"></i>
+          <div>
+            <h3 class="text-sm font-bold text-white">Achanta Mukesh Mourya — Resume</h3>
+            <span class="text-xs text-slate-400">Official Document Preview</span>
+          </div>
+        </div>
+        <div class="flex items-center gap-2">
+          <a href="assets/Achanta_Mukesh_Mourya_Resume.pdf" download="Achanta_Mukesh_Mourya_Resume.pdf"
+             class="px-3 py-1.5 rounded-lg bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold text-xs transition flex items-center gap-1.5">
+            <i data-lucide="download" class="w-3.5 h-3.5"></i>
+            <span>Download</span>
+          </a>
+          <button id="close-resume-modal" type="button" class="p-1.5 rounded-lg text-slate-400 hover:text-white bg-slate-800">
+            <i data-lucide="x" class="w-5 h-5"></i>
+          </button>
+        </div>
+      </div>
+      <!-- PDF Embed Body -->
+      <div class="flex-1 bg-slate-950 p-2 overflow-auto">
+        <iframe src="assets/Achanta_Mukesh_Mourya_Resume.pdf" class="w-full h-[70vh] rounded-xl border border-slate-800" title="Resume PDF Preview">
+          <p class="p-8 text-center text-slate-400">
+            Your browser does not support inline PDF viewing. 
+            <a href="assets/Achanta_Mukesh_Mourya_Resume.pdf" class="text-cyan-400 underline" download>Download the PDF</a> instead.
+          </p>
+        </iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-slate-800/80 bg-slate-950/80 py-12 relative z-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+        <div class="flex items-center gap-3">
+          <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-cyan-500 to-emerald-400 p-[1.5px]">
+            <div class="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center font-mono-code font-bold text-xs text-cyan-400">
+              AMM
+            </div>
+          </div>
+          <div>
+            <div class="font-bold text-white text-sm">Achanta Mukesh Mourya</div>
+            <div class="text-xs text-slate-400">Data Science | AI/ML | Machine Learning</div>
+          </div>
+        </div>
+
+        <!-- Footer Fast Links -->
+        <div class="flex flex-wrap items-center justify-center gap-6 text-xs text-slate-400">
+          <a href="#about" class="hover:text-cyan-400 transition">About</a>
+          <a href="#skills" class="hover:text-cyan-400 transition">Skills</a>
+          <a href="#projects" class="hover:text-cyan-400 transition">Projects</a>
+          <a href="#research" class="hover:text-amber-400 transition">Research</a>
+          <a href="#certifications" class="hover:text-cyan-400 transition">Certifications</a>
+          <a href="#education" class="hover:text-cyan-400 transition">Education</a>
+          <a href="#contact" class="hover:text-cyan-400 transition">Contact</a>
+        </div>
+
+        <!-- Social Icons -->
+        <div class="flex items-center gap-3 text-slate-400">
+          <a href="https://www.linkedin.com/in/achantamukeshmourya/" target="_blank" rel="noopener noreferrer" class="hover:text-[#0A66C2] transition" title="LinkedIn">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
+          </a>
+          <a href="https://github.com/mouryaachanta" target="_blank" rel="noopener noreferrer" class="hover:text-white transition" title="GitHub">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+            </svg>
+          </a>
+          <a href="https://www.aijfr.com/research-paper.php?id=4712" target="_blank" rel="noopener noreferrer" class="hover:text-amber-400 transition" title="Research Paper">
+            <i data-lucide="book-open" class="w-4 h-4"></i>
+          </a>
+          <a href="mailto:achantamukeshmourya@gmail.com" class="hover:text-cyan-400 transition" title="Email">
+            <i data-lucide="mail" class="w-4 h-4"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="mt-8 pt-6 border-t border-slate-900 flex flex-col sm:flex-row items-center justify-between text-[11px] text-slate-400 gap-2">
+        <p>&copy; 2026 Achanta Mukesh Mourya. All rights reserved.</p>
+        <p>Built with Semantic HTML5, Tailwind CSS, Lucide Icons & Verified Research Data.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
