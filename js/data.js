@@ -52,6 +52,8 @@ const PORTFOLIO_DATA = {
       icon: "bar-chart-3",
       skills: [
         { name: "Data Analysis", level: "EDA & Pattern Discovery", highlight: true },
+        { name: "Data Visualization", level: "Interactive Charts & Visual Dashboards", highlight: true },
+        { name: "Tableau", level: "Visual Analytics & Dashboards", highlight: true },
         { name: "Data Preprocessing", level: "Cleaning, Normalization & Imputation", highlight: true },
         { name: "Time-Series Processing", level: "Sliding Windows & Trend Clipping", highlight: true },
         { name: "Microsoft Excel", level: "Spreadsheets & Analytics", highlight: false },

@@ -27,7 +27,7 @@ Built strictly from verified credentials from his resume, peer-reviewed publishe
 
 4. **Technical Skills**:
    - **Languages & Databases**: Python, SQL, Jupyter Notebooks.
-   - **Data Science & Analytics**: Data Analysis, Data Preprocessing, Time-Series Feature Engineering, Microsoft Excel, Statistics.
+   - **Data Science & Analytics**: Data Analysis, Data Preprocessing, Data Visualization, Tableau, Time-Series Feature Engineering, Microsoft Excel, Statistics.
    - **Machine Learning & Deep Learning**: ML Algorithms, Deep Learning, 1D CNNs, Transformer Encoders, Dual-Head Uncertainty Estimation, Evaluation Metrics.
    - **Frameworks, Cloud & Tools**: TensorFlow, Flask, Git & GitHub, IBM Cloud / watsonx.
    - **Soft Skills & Spoken Languages**: Analytical Thinking, Problem Solving, Research Skills, Teamwork, Adaptability, English, Telugu.
